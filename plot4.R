@@ -12,7 +12,7 @@ plot(dt$DateTime, dt$Global_active_power, type="l", col="black", main="", xlab="
 plot(dt$DateTime, dt$Sub_metering_1, type="l", col="black", main="", xlab="", ylab="Energy sub metering")
 lines(dt$DateTime, dt$Sub_metering_2, col="red")
 lines(dt$DateTime, dt$Sub_metering_3, col="blue")
-legend("topright", lty=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", bty="n", lty=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.6)
 plot(dt$DateTime, dt$Voltage, type="l", col="black", main="", xlab="datetime", ylab="Voltage" )
 plot(dt$DateTime, dt$Global_reactive_power, type="l", col="black", main="", xlab="datetime", ylab="Global_reactive_power" )
 
